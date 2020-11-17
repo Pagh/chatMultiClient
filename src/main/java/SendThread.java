@@ -25,6 +25,8 @@ public class SendThread extends Thread{
         @Override
         public void run() {
             try {
+                String name = input.readLine();
+                VersoServer.writeBytes(name + '\n');
                 for(;;) {
                     String mex = input.readLine();
                     if(mex.equalsIgnoreCase("3")) {
