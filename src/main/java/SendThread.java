@@ -25,6 +25,7 @@ public class SendThread extends Thread{
         @Override
         public void run() {
             try {
+                //Invio dell'username
                 String name = input.readLine();
                 VersoServer.writeBytes(name + '\n');
                 for(;;) {
